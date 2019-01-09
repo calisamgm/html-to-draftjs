@@ -13,5 +13,8 @@ export default function getBlockData(
   if (node.style.lineHeight) {
     data['line-height'] = node.style.lineHeight;
   }
+  if (node.style.margin) {
+    data['margin'] = node.style.margin;
+  }
   return new Map(data);
 }
